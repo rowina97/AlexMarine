@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" >
+    <link rel="StyleSheet" href="Style.css">
+    <title> Careers Page</title>
+</head>
+
+<body class="example" >
+
+    <div class="nav" style="background-color: white;">
+    <img class="logo" src="Logo.png" alt="Logo">
+    <ul>
+        <li><a class="active" href="Careers.html">Careers</a></li>
+        <li><a href="ContactusPage.html">Contact us</a></li> 
+        <!-- <li><a href="E-SolutionPage.html">E-Solution</a></li> -->
+        <li><a  href="OurClients.html">Our Clients</a></li>
+        <li><a href="ServicesPage.html">Services</a></li>
+        <li><a href="AboutusPage.html">About us</a></li>
+        <li><a href="Index.html">Home</a></li>
+    </ul>
+    </div>
+
+
+
+
+    <!-- Career Form -->
+
+<div class="Career">
+    <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Job</legend>
+          <label>
+            Application for *
+            <!-- <select name="Application for" required>
+              <option>Job A</option>
+              <option>Job B</option>
+            </select> -->
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Personal data</legend>
+          <div class="two-cols">
+            <label>
+              First name *
+              <input type="text" name="First name" required>
+            </label>
+            <label>
+              Last name *
+              <input type="text" name="Last name" required>
+            </label>
+          </div>
+          <div class="two-cols">
+            <label>
+              Nationality
+              <input type="text" name="
+              Nationality">
+            </label>
+            <label>
+              Date of birth
+              <input type="date" name="Date of birth">
+            </label>
+          </div>
+          <label>
+            Address
+            <input type="text" name="Address">
+          </label>
+          <div class="two-cols">
+            <label>
+              ZIP Code
+              <input type="text" name="ZIP">
+            </label>
+            <label>
+              City
+              <input type="text" name="City">
+            </label>
+          </div>
+          <div class="two-cols">
+            <label>
+              Phone *
+              <input type="tel" name="Phone" required>
+            </label>
+            <label>
+              Email address *
+              <input type="email" name="Email" required>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Application documents</legend>
+          <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+          <div class="two-cols">
+            <label>
+              Cover Letter
+              <input type="file" name="Cover letter" accept=".doc,.docx,.pdf">
+            </label>
+            <label>
+              Upload Your CV *
+              <input type="file" name="CV" accept=".doc,.docx,.pdf" required>
+            </label>
+          </div>
+          <p>Possible file types: DOC, PDF. Maximum file size: 10 MB.</p>
+        </fieldset>
+       
+        <div class="btns">
+          <input type="text" name="_gotcha" value="" style="display:none;">
+          <input type="submit" value="Submit application">
+        </div>
+     
+        
+      </form>
+    </div>
+
+<!-- 
+    <div class="career2">
+        
+    </div> -->
+
+</body>
+<script src="JS.JS"></script>
+</html>

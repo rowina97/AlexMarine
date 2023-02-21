@@ -1,0 +1,147 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+body {
+    margin: auto;
+    font-family:'Barlow';
+    overflow: auto;
+    background: linear-gradient(315deg, #00acdf 3%, #3c84ce 38%, #30eee2 68%, #55d0ff 98%, #7ce8ff, #ccf9ff);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+
+
+/* h1 style and font size */
+h1{
+   text-align: center;
+   margin: auto;
+   padding-top: 15%;
+   font-family: 'Barlow';
+   font-size: 70px;
+   font-style: normal;
+   color: #0b056e;
+
+}
+
+/* Logo Style */
+img{
+    width:100px;
+    height:100px;
+    padding-top: 3px;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
+
+/* navigation bar Style */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 4px;
+    overflow: hidden;
+  }
+  
+li {
+    float: right;
+  }
+  
+li a {
+    display: block;
+    color: #0b056e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover:not(.active) {
+    background-color: #858585;
+  }
+  
+.active {
+    background-color: #0b056e;
+    color: aliceblue;
+}
+/* Logo in navigation bar */
+
+.nav img{
+    float: left;
+   
+}
+.nav{
+    font-family: 'Barlow';
+}
+
+/* Background Style */
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+/* Mobile view */
+@media only screen and (max-width: 768px) {
+    body {
+  
+      background-size: 200% 200%;
+
+    }
+    .nav {
+        width: 60px;
+    }
+  }
